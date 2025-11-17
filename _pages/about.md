@@ -2,18 +2,18 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href='https://publichealth.jhu.edu/departments/biostatistics/people/students/scm-student-profiles'>2nd Year ScM @ JHSPH</a>. Biostatistics. Computational Biology. AI. Rock Climbing.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: self_photo.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>W3513</p>
+    <p>615 N Wolfe St</p>
+    <p>Baltimore, MD 21205</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -22,13 +22,13 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi there! I'm Moran Guo, a 2nd year ScM student in Biostatistics at Johns Hopkins Bloomberg School of Public Health. I graduated from [University of Rochester](https://rochester.edu) with a B.S. in Biological Sciences: Computational Biology (Magna Cum Laude) and minors in Mathematics & Japanese. I studied protein coevolution, protein folding, and utilized AlphaFold & Bayesian Graphic Model to investigate correlated mutations during the junior and senior years of my undergraduate.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Currently, I'm working with [Yiqun T. Chen](https://yiqunchen.github.io) on implementing the Prediction Powered Inference (PPI) framework. I'm focusing on developing Monte Carlo simulations of PPI estimators and examine the efficiency.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Outside of academics, I’m also a huge fan to rock climbing (follow me on [KAYA](https://app.kayaclimb.com/share/profile?id=239459&childId=null&suid=239459)) & fitness. Besides that, I also enjoyed pop Japanese culture, electronic music and watching tennis. In the near future, I might consider playing squash or golf (or both).

@@ -2,96 +2,89 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Moran Guo
     - name: Date of Birth
-      value: 14th March 1879
+      value: August 17, 2002
     - name: Languages
-      value: English, German
+      value: Chinese (Native), English (Fluent), Japanese (Intermediate)
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+    - title: ScM in Biostatistics (2-year, courswork + thesis)
+      institution: Johns Hopkins Bloomberg School of Public Health (JHSPH)
+      location: Baltimore, MD
+      year: 8/2024 - present
+      GPA: "-"
+    - courses:
+      - Real analysis
+      - Biostatistics methods
+      - Survival analysis
+      - Advanced statistical computing
+    - description:
+      - Genomics, computational biology
+      - Causal inference, Monte Carlo simulation, prediction-powered inference (PPI)
+      - Coursework and projects emphasize reproducible workflows in R/Python and HPC (Slurm/JHPCE)
+      
+    - title: B.S. in Computational Biology (Magna Cum Laude)
+      institution: University of Rochester
+      location: Rochester, NY
+      year: 2/2021 - 5/2024
+      GPA: 3.96/4.0
+    - courses:
+      - Biochemistry & Organic Biology
+      - Advanced Linear Algebra
+      - Statistics & Genomics
+    - description:
+      - Solid theoretical and applied training in statistics and computational biology.
+      - Foundation for current research in probabilistic modeling and biological networks.
 
-- title: Experience
+- title: Research Experiences
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Graduate Research Assistant (Chen Lab)
+      institution: Johns Hopkins Bloomberg School of Public Health (JHSPH)
+      year: 3/2025 - present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - "Supervisor: [Yiqun T. Chen](https://yiqunchen.github.io)"
+    - title: Paid Part-time Biostatistician, Neuroimmunology (MIPSA Analyses)
+      institution: Johns Hopkins School of Medicine (JHSOM) & JHSPH (collaborative project)
+      year: 7/2025 - present
       description:
-        - Description 1.
-        - Description 2.
+        - Built predictive modeling frameworks on paired CSF and blood data, establishing a foundation for future multi-modal prediction by integrating peptide reactivity with other biological signals.
+        - "Supervisor(s): Dr. David Acero-Garces (JHSOM), [Dr. Ingo Ruczinski](https://biostat.jhsph.edu/~iruczins/) (JHSPH)"
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Undergraduate Research Assistant (Werren Lab)
+      institution: University of Rochester
+      location: Rochester, NY
+      year: 08/2022 - 05/2024
       description:
+        - "Surveyed molecular evolution and protein-protein interactions (PPIs) using the Evolution Rate Correlation (ERC) approach."
+        - "Applied Bayesian Graphical Models (BGM) to study residue-level PPIs among ERC-identified proteins."
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+    - title: Independent Study (Computational Biology)
+      institution: University of Rochester
+      location: Rochester, NY
+      year: 09/2023 - 05/2024
+      description:
+        - "Researched target protein RTL9 and its possible connection with BRCA1 based on evolutionary correlation and BGM analysis."
+        - "Developed a BGM analysis pipeline that accelerated analysis by 200%, enabling batch-protein input and structured output."
+        - "Explored docking and machine learning techniques to infer protein coevolution hotspots."
+        - "Supervisor: [Dr. John (Jack) Werren](https://www.sas.rochester.edu/bio/people/emeritus/werren_john/index.html)"
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Computational Biology & Networks
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Protein-protein interaction prediction, graph learning, and cross-dataset alignment (HuRI ↔ brain-specific networks).
+        - Prior integration from HuRI/BIOGRID; embedding-based modeling (e.g., ESM/Gene-level embeddings).
+    - title: Statistical Methods
       items:
-        - Description 1.
-        - Description 2.
+        - Causal inference; Bayesian methods and MCMC; prediction-powered inference; Monte Carlo/importance sampling.
+        - Design/analysis of experiments; variance estimation; robust inference with missingness considerations.
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> rock climbing (recovering from an ankle sprain), electronic music, Japanese pop culture, tennis; considering squash or golf.

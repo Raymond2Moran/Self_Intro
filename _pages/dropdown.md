@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: submenus
 nav: true
@@ -11,3 +11,4 @@ children:
   - title: blog
     permalink: /blog/
 ---
+ -->
