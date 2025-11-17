@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - main
+      - redesign
     paths:
       - "assets/**"
       - "**.html"

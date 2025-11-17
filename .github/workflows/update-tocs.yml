@@ -6,6 +6,7 @@ on:
     branches:
       - main
       - master
+      - redesign
     paths:
       - "*.md"
   workflow_dispatch:
