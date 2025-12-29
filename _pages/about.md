@@ -6,7 +6,7 @@ subtitle: <a href='https://publichealth.jhu.edu/departments/biostatistics/people
 
 profile:
   align: right
-  image: self_photo.jpg
+  image: Self_photo_business_casual.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>W3513</p>
@@ -29,6 +29,8 @@ latest_posts:
 
 Hi there! I'm Moran Guo, a 2nd year ScM student in Biostatistics at Johns Hopkins Bloomberg School of Public Health. I graduated from [University of Rochester](https://rochester.edu) with a B.S. in Biological Sciences: Computational Biology (Magna Cum Laude) and minors in Mathematics & Japanese. I studied protein coevolution, protein folding, and utilized AlphaFold & Bayesian Graphic Model to investigate correlated mutations during the junior and senior years of my undergraduate.
 
-Currently, I'm working with [Yiqun T. Chen](https://yiqunchen.github.io) on implementing the Prediction Powered Inference (PPI) framework. I'm focusing on developing Monte Carlo simulations of PPI estimators and examine the efficiency.
+Currently, I'm working with [Yiqun T. Chen](https://yiqunchen.github.io) on implementing the Prediction Powered Inference (PPI) framework. I'm focusing on developing Monte Carlo simulations of PPI estimators and examine the efficiency. Our recent project analyzes PPI estimators using "LLM-as-a-judge" paradigm, comparing the estimation efficiency of PPI with Rogan–Gladen-style estimators.
+
+In a second project, I am working on the statistical analysis of large-scale neuroimmunology data in collaboration with clinicians in the Department of Neurology at the Johns Hopkins University School of Medicine, under the guidance of [Ingo Ruczinski](https://publichealth.jhu.edu/faculty/1011/ingo-ruczinski). This work involves developing reproducible analysis pipelines for high-dimensional immunological assay data, including normalization, paired-sample inference, and multiple testing correction, as well as building predictive models using paired CSF–blood features to support disease classification and exploratory biomarker discovery. The project emphasizes close interdisciplinary collaboration and translating statistically rigorous results into clinically interpretable insights.
 
 Outside of academics, I’m also a huge fan to rock climbing (follow me on [KAYA](https://app.kayaclimb.com/share/profile?id=239459&childId=null&suid=239459)) & fitness. Besides that, I also enjoyed pop Japanese culture, electronic music and watching tennis. In the near future, I might consider playing squash or golf (or both).

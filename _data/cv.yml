@@ -83,6 +83,12 @@
       items:
         - Causal inference; Bayesian methods and MCMC; prediction-powered inference; Monte Carlo/importance sampling.
         - Design/analysis of experiments; variance estimation; robust inference with missingness considerations.
+    - title: Application to Biomedical Data
+      items:
+        - Streamlined reproducible workflows
+        - Statistical analyses
+        - Cross-functional team communication
+
 
 - title: Other Interests
   type: list
