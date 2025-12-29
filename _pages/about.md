@@ -6,7 +6,7 @@ subtitle: <a href='https://publichealth.jhu.edu/departments/biostatistics/people
 
 profile:
   align: right
-  image: Self_photo_business_casual.jpg
+  image: Self_photo_business_casual.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>W3513</p>
