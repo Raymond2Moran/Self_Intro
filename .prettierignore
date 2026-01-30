@@ -10,3 +10,15 @@ _posts/2015-10-20-math.md
 _sass/font-awesome/*.scss
 _sass/tabler-icons/*.scss
 _scripts/*
+
+# Ignore the generated website (Jekyll output)
+_site/
+
+# Ignore SCSS files with Liquid variables
+assets/css/main.scss
+
+# Ignore any vendor/minified CSS
+assets/css/*.min.css
+
+# Ignore scripts that contain Jekyll front matter/liquid
+_scripts/*.js

@@ -17,27 +17,27 @@
       year: 8/2024 - present
       GPA: "-"
     - courses:
-      - Real analysis
-      - Biostatistics methods
-      - Survival analysis
-      - Advanced statistical computing
+        - Real analysis
+        - Biostatistics methods
+        - Survival analysis
+        - Advanced statistical computing
     - description:
-      - Genomics, computational biology
-      - Causal inference, Monte Carlo simulation, prediction-powered inference (PPI)
-      - Coursework and projects emphasize reproducible workflows in R/Python and HPC (Slurm/JHPCE)
-      
+        - Genomics, computational biology
+        - Causal inference, Monte Carlo simulation, prediction-powered inference (PPI)
+        - Coursework and projects emphasize reproducible workflows in R/Python and HPC (Slurm/JHPCE)
+
     - title: B.S. in Computational Biology (Magna Cum Laude)
       institution: University of Rochester
       location: Rochester, NY
       year: 2/2021 - 5/2024
       GPA: 3.96/4.0
     - courses:
-      - Biochemistry & Organic Biology
-      - Advanced Linear Algebra
-      - Statistics & Genomics
+        - Biochemistry & Organic Biology
+        - Advanced Linear Algebra
+        - Statistics & Genomics
     - description:
-      - Solid theoretical and applied training in statistics and computational biology.
-      - Foundation for current research in probabilistic modeling and biological networks.
+        - Solid theoretical and applied training in statistics and computational biology.
+        - Foundation for current research in probabilistic modeling and biological networks.
 
 - title: Research Experiences
   type: time_table
@@ -88,7 +88,6 @@
         - Streamlined reproducible workflows
         - Statistical analyses
         - Cross-functional team communication
-
 
 - title: Other Interests
   type: list

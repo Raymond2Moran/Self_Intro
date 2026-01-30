@@ -61,9 +61,11 @@
                     <td class="gpa align-middle" style="vertical-align:middle;">
                       {%- assign gpa_value = content.GPA | default: content.gpa -%}
                       {%- if content.GPA_label -%}
-                        {{ content.GPA_label }}: {{ gpa_value }}{%- if content.GPA_scale -%}/{{ content.GPA_scale }}{%- endif -%}
+                        {{ content.GPA_label }}: {{ gpa_value }}
+                        {%- if content.GPA_scale -%}/{{ content.GPA_scale }}{%- endif -%}
                       {%- else -%}
-                        Cumulative GPA: {{ gpa_value }}{%- if content.GPA_scale -%}/{{ content.GPA_scale }}{%- endif -%}
+                        Cumulative GPA: {{ gpa_value }}
+                        {%- if content.GPA_scale -%}/{{ content.GPA_scale }}{%- endif -%}
                       {%- endif -%}
                     </td>
                   </tr>
@@ -77,7 +79,7 @@
           {% if content.courses %}
             <div class="ml-1 ml-md-4">
               <span class="item-title" style="text-decoration: underline; text-underline-offset: 2px;">
-                {{ content.courses_title | default: "Relevant courses" }}
+                {{ content.courses_title | default: 'Relevant courses' }}
               </span>
               <ul class="items mt-1">
                 {%- assign courses_list = content.courses -%}
@@ -104,12 +106,13 @@
                     <span class="item-title">{{ item.title }}</span>
                     <ul class="subitems">
                       {% for subitem in item.contents %}
-                        <li><span class="subitem">{{ subitem }}</span></li>
+                        <li>
+                          <span class="subitem">{{ subitem }}</span>
+                        </li>
                       {% endfor %}
                     </ul>
                   {% else %}
-                    <span class="item">  {{ item | markdownify | replace: '<p>', '' | replace: '</p>', '' }}
-</span>
+                    <span class="item"> {{ item | markdownify | replace: '<p>', '' | replace: '</p>', '' }} </span>
                   {% endif %}
                 </li>
               {% endfor %}
@@ -124,7 +127,9 @@
                     <span class="item-title">{{ item.title }}</span>
                     <ul class="subitems">
                       {% for subitem in item.contents %}
-                        <li><span class="subitem">{{ subitem }}</span></li>
+                        <li>
+                          <span class="subitem">{{ subitem }}</span>
+                        </li>
                       {% endfor %}
                     </ul>
                   {% else %}

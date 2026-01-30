@@ -10,8 +10,14 @@
 }
 
 /* 2) Global sizing */
-html { font-size: 17px; }
-@media (min-width: 1200px) { html { font-size: 18px; } }
+html {
+  font-size: 17px;
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+}
 
 /* 3) Body sets the font + color once */
 body {
@@ -24,16 +30,46 @@ body {
 }
 
 /* 4) Headings + emphasis weights (inherit family/color from body) */
-h1, h2, h3, h4, h5, h6 { letter-spacing: -0.01em; margin-top: .6rem; margin-bottom: .35rem; }
-h1 { font-weight: 800; }
-h2 { font-weight: 700; }
-h3, h4, h5, h6 { font-weight: 600; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.01em;
+  margin-top: 0.6rem;
+  margin-bottom: 0.35rem;
+}
+h1 {
+  font-weight: 800;
+}
+h2 {
+  font-weight: 700;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
 
-p, li, span, div, em { font-weight: 400; }
-strong { font-weight: 600; }
+p,
+li,
+span,
+div,
+em {
+  font-weight: 400;
+}
+strong {
+  font-weight: 600;
+}
 
 /* 5) Horizontal rule */
-hr { border: 0; border-top: 1px solid var(--global-divider-color); margin: 1rem 0; }
+hr {
+  border: 0;
+  border-top: 1px solid var(--global-divider-color);
+  margin: 1rem 0;
+}
 
 table {
   td,
