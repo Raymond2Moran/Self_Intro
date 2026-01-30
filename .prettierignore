@@ -9,16 +9,17 @@ lighthouse_results/**
 _posts/2015-10-20-math.md
 _sass/font-awesome/*.scss
 _sass/tabler-icons/*.scss
-_scripts/*
 
 # Ignore the generated website (Jekyll output)
 _site/
+.jekyll-cache/
 
 # Ignore SCSS files with Liquid variables
 assets/css/main.scss
 
 # Ignore any vendor/minified CSS
 assets/css/*.min.css
+assets/js/*.min.js
 
 # Ignore scripts that contain Jekyll front matter/liquid
-_scripts/*.js
+_scripts/
