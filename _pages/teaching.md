@@ -16,3 +16,5 @@ Led weekly discussion sections (2 sections, 30 students each) and office hours f
 **Current**:
 
 Spring 2026: Graduate Teaching Assistant, AS.280.345 Public Health Biostatistics, Johns Hopkins University.
+
+Grade problem sets, projects, and exams.
