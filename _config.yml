@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Moran Guo 郭沫然 # the website title (if blank, full name will be used instead)
+title: '<span class="title-en">Moran Guo</span> <span class="title-zh">郭沫然</span>' # the website title (if blank, full name will be used instead)
 first_name: Moran
 middle_name:
 last_name: Guo
