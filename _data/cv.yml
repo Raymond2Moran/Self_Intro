@@ -6,13 +6,18 @@
     - name: Date of Birth
       value: August 17, 2002
     - name: Languages
-      value: Chinese (Native), English (Fluent), Japanese (Intermediate)
+      value: Chinese (Native), English (Fluent), Japanese (Intermediate, JLPT N3)
 
+- title: Certification
+  type: list
+  contents: 
+    - <b>SAS Certified Specialist:</b> Base Programming Using SAS 9.4
+    
 - title: Education
   type: time_table
   contents:
     - title: ScM in Biostatistics (2-year, courswork + thesis)
-      institution: Johns Hopkins Bloomberg School of Public Health (JHSPH)
+      institution: Johns Hopkins Bloomberg School of Public Health
       location: Baltimore, MD
       year: 8/2024 - present
       GPA: "-"
@@ -20,11 +25,11 @@
         - Real analysis
         - Biostatistics methods
         - Survival analysis
-        - Advanced statistical computing
+        - Statistical computing
     - description:
         - Genomics, computational biology
-        - Causal inference, Monte Carlo simulation, prediction-powered inference (PPI)
-        - Coursework and projects emphasize reproducible workflows in R/Python and HPC (Slurm/JHPCE)
+        - Monte Carlo simulation, prediction-powered inference (PPI)
+        - Coursework and projects emphasize reproducible workflows in R, R Package Development and HPC (Slurm/JHPCE)
 
     - title: B.S. in Computational Biology (Magna Cum Laude)
       institution: University of Rochester
@@ -32,7 +37,7 @@
       year: 2/2021 - 5/2024
       GPA: 3.96/4.0
     - courses:
-        - Biochemistry & Organic Biology
+        - Biochemistry & Organic Chemistry
         - Advanced Linear Algebra
         - Statistics & Genomics
     - description:
@@ -47,11 +52,12 @@
       year: 3/2025 - present
       description:
         - "Supervisor: [Yiqun T. Chen](https://yiqunchen.github.io)"
-    - title: Paid Part-time Biostatistician, Neuroimmunology (MIPSA Analyses)
+    - title: Biostatistician, Neuroimmunology (MIPSA Analyses)
       institution: Johns Hopkins School of Medicine (JHSOM) & JHSPH (collaborative project)
       year: 7/2025 - present
       description:
         - Built predictive modeling frameworks on paired CSF and blood data, establishing a foundation for future multi-modal prediction by integrating peptide reactivity with other biological signals.
+        - Translate complex statistical methodologies into written reports for clinicians and immunologists.
         - "Supervisor(s): Dr. David Acero-Garces (JHSOM), [Dr. Ingo Ruczinski](https://biostat.jhsph.edu/~iruczins/) (JHSPH)"
 
     - title: Undergraduate Research Assistant (Werren Lab)
@@ -92,4 +98,5 @@
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> rock climbing (recovering from an ankle sprain), electronic music, Japanese pop culture, tennis; considering squash or golf.
+    - <u>Hobbies:</u> rock climbing (primarily bouldering), electronic music, Japanese pop culture; considering squash or golf.
+
