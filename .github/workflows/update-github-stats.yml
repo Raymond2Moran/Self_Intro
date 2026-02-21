@@ -1,0 +1,50 @@
+name: Update GitHub Stats Cards
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 2 * * *" # daily UTC
+  push:
+    branches: [main, master, redesign]
+    paths:
+      - "_data/repositories.yml"
+      - "_config.yml"
+      - ".github/workflows/update-github-stats.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        username: [Raymond2Moran] # add more usernames here if needed
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate light stats card
+        uses: stats-organization/github-readme-stats-action@v1.1.0
+        with:
+          card: stats
+          options: username=${{ matrix.username }}&show_icons=true&theme=shadow_blue&locale=en
+          path: assets/img/repo-stats/${{ matrix.username }}-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate dark stats card
+        uses: stats-organization/github-readme-stats-action@v1.1.0
+        with:
+          card: stats
+          options: username=${{ matrix.username }}&show_icons=true&theme=radical&locale=en
+          path: assets/img/repo-stats/${{ matrix.username }}-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit updated cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/img/repo-stats/*.svg
+          git diff --cached --quiet && exit 0
+          git commit -m "chore(stats): update GitHub stats cards"
+          git push
