@@ -417,6 +417,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/Self_Intro/news/announcement_1/";
+            },},{id: "news-preprint-out",
+          title: 'Preprint out!',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/Self_Intro/news/announcement_2/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
