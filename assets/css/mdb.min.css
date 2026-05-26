@@ -2901,14 +2901,6 @@ a.waves-light {
     0 5px 11px 0 rgba(0, 0, 0, 0.18),
     0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
-
-.btn .far.right {
-  margin-left: 0.3rem;
-}
-
-.btn .far.left {
-  margin-right: 0.3rem;
-}
 .btn.btn-sm {
   padding: 0.5rem 1.6rem;
   font-size: 0.64rem;
@@ -3165,11 +3157,6 @@ a.btn:not([href]):not([tabindex]):hover {
 }
 .navbar .nav-item .nav-link.disabled:active {
   pointer-events: none;
-}
-
-.navbar .nav-item .nav-link .far {
-  padding-right: 3px;
-  padding-left: 3px;
 }
 @media (max-width: 992px) {
   .navbar .nav-item .nav-link {
