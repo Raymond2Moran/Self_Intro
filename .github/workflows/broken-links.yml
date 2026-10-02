@@ -24,6 +24,7 @@ on:
     branches:
       - master
       - main
+      - redesign
     paths:
       - "assets/**"
       - "**.html"
@@ -42,8 +43,6 @@ on:
 jobs:
   link-checker:
     runs-on: ubuntu-latest
-    # only run on the main repo
-    if: github.repository == 'alshedivat/al-folio'
     steps:
       - uses: actions/checkout@v4
 
@@ -51,5 +50,6 @@ jobs:
         uses: lycheeverse/lychee-action@v2.1.0
         with:
           fail: true
-          # removed md files that include liquid tags
-          args: --user-agent 'curl/7.54' --exclude-path README.md --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --exclude-path _posts/2023-04-24-videos.md --exclude-path _books/the_godfather.md --verbose --no-progress './**/*.md' './**/*.html'
+          # Check personal content; inherited theme documentation/demo posts are not maintained here.
+          # Rendered internal links and assets are checked by _scripts/check-site.mjs.
+          args: --user-agent 'curl/7.54' --max-retries 2 --verbose --no-progress '_pages/about.md' '_pages/teaching.md' '_news/*.md'

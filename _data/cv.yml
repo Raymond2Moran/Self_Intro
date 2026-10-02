@@ -10,9 +10,9 @@
 
 - title: Certification
   type: list
-  contents: 
+  contents:
     - <b>SAS Certified Specialist:</b> Base Programming Using SAS 9.4
-    
+
 - title: Education
   type: time_table
   contents:
@@ -99,4 +99,3 @@
   type: list
   contents:
     - <u>Hobbies:</u> rock climbing (primarily bouldering), electronic music, Japanese pop culture; considering squash or golf.
-
