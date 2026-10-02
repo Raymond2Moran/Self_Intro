@@ -41,7 +41,9 @@
     {% when 'leetcode_id' %}
       <a href="https://leetcode.com/u/{{ social[1] }}/" target="_blank" title="LeetCode"><i class="si si-leetcode"></i></a>
     {% when 'linkedin_username' %}
-      <a href="https://www.linkedin.com/in/{{ social[1] }}" title="LinkedIn" aria-label="Moran Guo on LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.linkedin.com/in/{{ social[1] }}" title="LinkedIn" aria-label="Moran Guo on LinkedIn"
+        ><i class="fa-brands fa-linkedin"></i
+      ></a>
     {% when 'mastodon_username' %}
       <a rel="me" href="https://{{ social[1] }}" title="Mastodon"><i class="fa-brands fa-mastodon"></i></a>
     {% when 'medium_username' %}
@@ -63,7 +65,9 @@
         <a href="{{ site.baseurl }}/feed.xml" title="RSS Feed"><i class="fa-solid fa-square-rss"></i></a>
       {% endif %}
     {% when 'scholar_userid' %}
-      <a href="https://scholar.google.com/citations?user={{ social[1] }}" title="Google Scholar" aria-label="Moran Guo on Google Scholar"><i class="ai ai-google-scholar"></i></a>
+      <a href="https://scholar.google.com/citations?user={{ social[1] }}" title="Google Scholar" aria-label="Moran Guo on Google Scholar"
+        ><i class="ai ai-google-scholar"></i
+      ></a>
     {% when 'scopus_id' %}
       <a href="https://www.scopus.com/authid/detail.uri?authorId={{ social[1] }}" title="Scopus"><i class="ai ai-scopus"></i></a>
     {% when 'semanticscholar_id' %}

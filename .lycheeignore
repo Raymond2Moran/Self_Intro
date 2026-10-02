@@ -1,2 +1,5 @@
 linkedin.com
 reddit.com
+# JHSPH blocks GitHub Actions requests with HTTP 403; these two URLs need manual review.
+^https://publichealth\.jhu\.edu/faculty/1011/ingo-ruczinski$
+^https://publichealth\.jhu\.edu/departments/biostatistics/people/students/scm-student-profiles$
