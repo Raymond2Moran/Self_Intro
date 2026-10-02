@@ -17,6 +17,10 @@ try {
     await page.setViewportSize({ width: 1280, height: 900 });
     const response = await page.goto(origin + route, { waitUntil: "networkidle" });
     assert.equal(response.status(), 200, route);
+    // Audit final theme colors, not intermediate colors from CSS transitions.
+    await page.addStyleTag({
+      content: "*, *::before, *::after { transition: none !important; animation: none !important; }"
+    });
     assert.ok(!(await page.title()).includes("<span"), "Page title must be plain text: " + route);
     // Check rendered local links/assets, including a restored CV PDF if one is added.
     const urls = await page.locator("a[href], img[src]").evaluateAll((elements) =>
@@ -35,7 +39,7 @@ try {
       const result = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa"]).analyze();
       for (const violation of result.violations) {
         failures.push(route + " (" + theme + "): " + violation.id + " " +
-          violation.nodes.map((node) => node.target.join(" ")).join(", "));
+          violation.nodes.map((node) => node.target.join(" ") + ": " + node.failureSummary).join(", "));
       }
     }
     await page.evaluate(() => setThemeSetting("light"));

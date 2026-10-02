@@ -118,6 +118,13 @@ table.table a {
   }
 }
 
+.post p a:not(.btn),
+.post .item a:not(.btn),
+footer a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 .table-dark {
   background-color: transparent;
   &.table-bordered {
