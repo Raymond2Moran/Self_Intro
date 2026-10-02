@@ -2,14 +2,7 @@ name: Update GitHub Stats Cards
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 2 * * *" # daily UTC
-  push:
-    branches: [main, master, redesign]
-    paths:
-      - "_data/repositories.yml"
-      - "_config.yml"
-      - ".github/workflows/update-github-stats.yml"
+  # Keep generation manual until the integration can return valid statistics.
 
 permissions:
   contents: write
@@ -39,6 +32,9 @@ jobs:
           options: username=${{ matrix.username }}&show_icons=true&theme=radical&locale=en
           path: assets/img/repo-stats/${{ matrix.username }}-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Validate generated cards
+        run: python3 _scripts/validate-stats.py assets/img/repo-stats/*.svg
 
       - name: Commit updated cards
         run: |
