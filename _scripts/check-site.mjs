@@ -29,16 +29,17 @@ try {
       if (!existsSync(filename)) failures.push(route + ": missing local target " + url.pathname);
     }
     for (const theme of ["light", "dark"]) {
-      await page.evaluate((value) => {
-        document.documentElement.setAttribute("data-theme", value);
-      }, theme);
+      // Use the site's switch so table and search-widget themes also update.
+      await page.evaluate((value) => setThemeSetting(value), theme);
+      await page.locator("html:not(.transition)").waitFor({ state: "attached" });
       const result = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa"]).analyze();
       for (const violation of result.violations) {
         failures.push(route + " (" + theme + "): " + violation.id + " " +
           violation.nodes.map((node) => node.target.join(" ")).join(", "));
       }
     }
-    await page.evaluate(() => document.documentElement.setAttribute("data-theme", "light"));
+    await page.evaluate(() => setThemeSetting("light"));
+    await page.locator("html:not(.transition)").waitFor({ state: "attached" });
     for (const width of [390, 600, 704, 1024]) {
       await page.setViewportSize({ width, height: 844 });
       const hiddenNavigation = await page.locator("#navbar a, #navbar button").evaluateAll((elements) => {
