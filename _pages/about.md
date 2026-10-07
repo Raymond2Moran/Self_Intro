@@ -2,16 +2,12 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://publichealth.jhu.edu/departments/biostatistics/people/students/scm-student-profiles'>2nd Year ScM @ JHSPH</a>. Biostatistics. Computational Biology. AI. Rock Climbing.
+subtitle: Biostatistician I @ Quantive Intelligence. Biostatistics. Clinical Trials. Computational Biology.
 
 profile:
   align: right
   image: Self_photo_business_casual.png
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>W3513</p>
-    <p>615 N Wolfe St</p>
-    <p>Baltimore, MD 21205</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,10 +23,12 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi there! I'm Moran Guo, a 2nd year ScM student in Biostatistics at Johns Hopkins Bloomberg School of Public Health. I graduated from [University of Rochester](https://rochester.edu) with a B.S. in Biological Sciences: Computational Biology (Magna Cum Laude) and minors in Mathematics & Japanese. I studied protein coevolution, protein folding, and utilized AlphaFold & Bayesian Graphic Model to investigate correlated mutations during the junior and senior years of my undergraduate.
+Hi there! I'm Moran Guo, a Biostatistician I at Quantive Intelligence (formerly LLX Solutions), where I support statistical analysis and SAS programming for clinical studies. My work includes preparing analysis datasets, developing and quality-controlling tables, listings, and figures, and communicating statistical results.
 
-Currently, I'm working with [Yiqun T. Chen](https://yiqunchen.github.io) on implementing the Prediction Powered Inference (PPI) framework. I'm focusing on developing Monte Carlo simulations of PPI estimators and examine the efficiency. Our [recent project](https://arxiv.org/abs/2601.05420) analyzes PPI estimators using "LLM-as-a-judge" paradigm, comparing the estimation efficiency of PPI with Rogan–Gladen-style estimators. Check the Github Repository and documentation [here](https://yiqunchen.github.io/debias-llm-as-a-judge/).
+I completed my ScM in Biostatistics at Johns Hopkins Bloomberg School of Public Health in May 2026. I also hold a B.S. in Biological Sciences: Computational Biology from the University of Rochester, graduating Magna Cum Laude with Honors in Research and minors in Mathematics and Japanese. I use SAS, R, Python, and SQL, with a focus on reproducible programming and clinical data standards including CDISC SDTM and ADaM.
 
-In a second project, I am working on the statistical analysis of large-scale neuroimmunology data in collaboration with clinicians in the Department of Neurology at the Johns Hopkins University School of Medicine, under the guidance of [Ingo Ruczinski](https://publichealth.jhu.edu/faculty/1011/ingo-ruczinski). This work involves developing reproducible analysis pipelines for high-dimensional immunological assay data, including normalization, paired-sample inference, and multiple testing correction, as well as building predictive models using paired CSF–blood features to support disease classification and exploratory biomarker discovery. The project emphasizes close interdisciplinary collaboration and translating statistically rigorous results into clinically interpretable insights.
+During my graduate studies, I worked with [Yiqun T. Chen](https://yiqunchen.github.io) on prediction-powered inference, Monte Carlo simulation, and power and sample size planning, including co-development of the pppower R package. Our work on [Efficient Inference for Noisy LLM-as-a-Judge Evaluation](https://arxiv.org/abs/2601.05420) was accepted at ICML 2026. I also contributed statistical analysis and data quality control to a neuroimmunology study using paired cerebrospinal fluid and serum samples at Johns Hopkins School of Medicine.
 
-Outside of academics, I’m also a huge fan to rock climbing (follow me on [KAYA](https://app.kayaclimb.com/share/profile?id=239459&childId=null&suid=239459)) & fitness. Besides that, I also enjoyed pop Japanese culture, electronic music and watching tennis. In the near future, I might consider playing squash or golf (or both).
+Outside of work, I enjoy rock climbing, fitness, Japanese pop culture, electronic music, and watching tennis.
+
+[Download my CV (PDF)]({{ '/assets/pdf/Moran_Guo_CV.pdf' | relative_url }}) or [view my experience and education]({{ '/cv/' | relative_url }}).
