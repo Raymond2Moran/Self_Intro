@@ -1682,9 +1682,6 @@ a.close.disabled {
 .h-100 {
   height: 100% !important;
 }
-.mt-1 {
-  margin-top: 0.25rem !important;
-}
 .mr-1 {
   margin-right: 0.25rem !important;
 }
@@ -1759,9 +1756,6 @@ a.close.disabled {
 }
 .font-weight-bold {
   font-weight: 700 !important;
-}
-.font-italic {
-  font-style: italic !important;
 }
 .visible {
   visibility: visible !important;

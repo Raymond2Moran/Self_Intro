@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "cv",
-          description: "",
+          description: "Biostatistician with experience in clinical trial programming, statistical methodology, and computational biology.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/Self_Intro/cv/";
