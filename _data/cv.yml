@@ -2,100 +2,117 @@
   type: map
   contents:
     - name: Full Name
-      value: Moran Guo
-    - name: Date of Birth
-      value: August 17, 2002
+      value: Moran Guo (he/him/his)
     - name: Languages
-      value: Chinese (Native), English (Fluent), Japanese (Intermediate, JLPT N3)
+      value: Chinese (Native), English (Fluent), Japanese (Intermediate)
 
-- title: Certification
+- title: Profile
   type: list
   contents:
-    - <b>SAS Certified Specialist:</b> Base Programming Using SAS 9.4
+    - Biostatistician with experience in clinical trial programming and statistical analysis using SAS and R.
+    - Analysis datasets, tables, listings, and figures (TLFs), quality control, and reproducible programming workflows.
+
+- title: Skills and Certification
+  type: map
+  contents:
+    - name: Certification
+      value: "SAS Certified Specialist: Base Programming Using SAS 9.4"
+    - name: Programming
+      value: SAS, R (including package development), Python, SQL, LaTeX
+    - name: Clinical Data Standards
+      value: CDISC SDTM, ADaM, TLF programming, QC programming
+    - name: Statistical Methods
+      value: GLMs, mixed models, Bayesian inference, Monte Carlo simulation, power analysis
+    - name: Reproducibility
+      value: Git/GitHub, Quarto/Markdown, CI/testing
+    - name: Visualization
+      value: ggplot2, Plotly, R Shiny, matplotlib, seaborn
+    - name: Computing
+      value: Linux/Unix, Bash, HPC/Slurm, Docker
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Biostatistician I
+      institution: Quantive Intelligence (formerly LLX Solutions)
+      location: Waltham, MA
+      year: Jul 2026 - present
+      description:
+        - Support analysis plans, SAS programming of tables, listings, and figures, and report writing under supervision.
+        - Debug and review SAS programs, including DATA _NULL_ and PROC REPORT.
+        - Work to analysis plans, standard operating procedures, and study guidelines.
+        - Interpret and summarize statistical results and prepare written reports under supervision.
+    - title: Graduate Research Assistant, Biostatistics (Chen Lab)
+      institution: Johns Hopkins Bloomberg School of Public Health
+      location: Baltimore, MD
+      year: Mar 2025 - May 2026
+      description:
+        - Designed simulation studies of prediction-powered inference to assess bias, variance, and confidence interval coverage.
+        - Co-developed the [pppower R package](https://yiqunchen.github.io/pppower/) for power and sample size planning, with CI-tested functions and documentation.
+        - "Supervisor: Dr. Yiqun T. Chen"
+    - title: Graduate Research Assistant, Neuroimmunology
+      institution: Johns Hopkins School of Medicine
+      location: Baltimore, MD
+      year: Jul 2025 - May 2026
+      description:
+        - Led statistical analysis of paired CSF/serum immunoprofiling data with quality control for plate effects, missingness, and outliers.
+        - Collaborated with clinicians and immunologists to refine analysis questions and communicate results.
+        - "Supervisors: Dr. David Acero-Garcés, Dr. Carlos Pardo-Villamizar, Dr. Ingo Ruczinski"
+    - title: Graduate Teaching Assistant, Biostatistics
+      institution: Johns Hopkins University
+      location: Baltimore, MD
+      year: Aug 2025 - May 2026
+    - title: Undergraduate Research Assistant, Computational Biology (Werren Lab)
+      institution: University of Rochester
+      location: Rochester, NY
+      year: Aug 2022 - May 2024
 
 - title: Education
   type: time_table
   contents:
-    - title: ScM in Biostatistics (2-year, courswork + thesis)
+    - title: ScM in Biostatistics
       institution: Johns Hopkins Bloomberg School of Public Health
       location: Baltimore, MD
-      year: 8/2024 - present
-      GPA: "-"
-    - courses:
-        - Real analysis
-        - Biostatistics methods
-        - Survival analysis
-        - Statistical computing
-    - description:
-        - Genomics, computational biology
-        - Monte Carlo simulation, prediction-powered inference (PPI)
-        - Coursework and projects emphasize reproducible workflows in R, R Package Development and HPC (Slurm/JHPCE)
-
-    - title: B.S. in Computational Biology (Magna Cum Laude)
+      year: Aug 2024 - May 2026
+      GPA: 3.84/4.0
+    - title: "B.S. in Biological Sciences: Computational Biology"
       institution: University of Rochester
       location: Rochester, NY
-      year: 2/2021 - 5/2024
+      year: Feb 2021 - May 2024
       GPA: 3.96/4.0
-    - courses:
-        - Biochemistry & Organic Chemistry
-        - Advanced Linear Algebra
-        - Statistics & Genomics
-    - description:
-        - Solid theoretical and applied training in statistics and computational biology.
-        - Foundation for current research in probabilistic modeling and biological networks.
-
-- title: Research Experiences
-  type: time_table
-  contents:
-    - title: Graduate Research Assistant (Chen Lab)
-      institution: Johns Hopkins Bloomberg School of Public Health (JHSPH)
-      year: 3/2025 - present
       description:
-        - "Supervisor: [Yiqun T. Chen](https://yiqunchen.github.io)"
-    - title: Biostatistician, Neuroimmunology (MIPSA Analyses)
-      institution: Johns Hopkins School of Medicine (JHSOM) & JHSPH (collaborative project)
-      year: 7/2025 - present
-      description:
-        - Built predictive modeling frameworks on paired CSF and blood data, establishing a foundation for future multi-modal prediction by integrating peptide reactivity with other biological signals.
-        - Translate complex statistical methodologies into written reports for clinicians and immunologists.
-        - "Supervisor(s): Dr. David Acero-Garces (JHSOM), [Dr. Ingo Ruczinski](https://biostat.jhsph.edu/~iruczins/) (JHSPH)"
+        - "Minors: Mathematics and Japanese"
+        - Magna Cum Laude and Honors in Research
+        - Phi Beta Kappa (2024), Dean's List
 
-    - title: Undergraduate Research Assistant (Werren Lab)
-      institution: University of Rochester
-      location: Rochester, NY
-      year: 08/2022 - 05/2024
-      description:
-        - "Surveyed molecular evolution and protein-protein interactions (PPIs) using the Evolution Rate Correlation (ERC) approach."
-        - "Applied Bayesian Graphical Models (BGM) to study residue-level PPIs among ERC-identified proteins."
-
-    - title: Independent Study (Computational Biology)
-      institution: University of Rochester
-      location: Rochester, NY
-      year: 09/2023 - 05/2024
-      description:
-        - "Researched target protein RTL9 and its possible connection with BRCA1 based on evolutionary correlation and BGM analysis."
-        - "Developed a BGM analysis pipeline that accelerated analysis by 200%, enabling batch-protein input and structured output."
-        - "Explored docking and machine learning techniques to infer protein coevolution hotspots."
-        - "Supervisor: [Dr. John (Jack) Werren](https://www.sas.rochester.edu/bio/people/emeritus/werren_john/index.html)"
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Computational Biology & Networks
-      items:
-        - Protein-protein interaction prediction, graph learning, and cross-dataset alignment (HuRI ↔ brain-specific networks).
-        - Prior integration from HuRI/BIOGRID; embedding-based modeling (e.g., ESM/Gene-level embeddings).
-    - title: Statistical Methods
-      items:
-        - Causal inference; Bayesian methods and MCMC; prediction-powered inference; Monte Carlo/importance sampling.
-        - Design/analysis of experiments; variance estimation; robust inference with missingness considerations.
-    - title: Application to Biomedical Data
-      items:
-        - Streamlined reproducible workflows
-        - Statistical analyses
-        - Cross-functional team communication
-
-- title: Other Interests
+- title: Publications
   type: list
   contents:
-    - <u>Hobbies:</u> rock climbing (primarily bouldering), electronic music, Japanese pop culture; considering squash or golf.
+    - "Chen, Y. T., Guo, M., Li, S. Power Analysis for Prediction-Powered Inference. Manuscript under review. [arXiv](https://arxiv.org/abs/2603.16041)."
+    - "Chen, Y. T., Lu, S., Li, S. J., Guo, M., Li, S. Y. Efficient Inference for Noisy LLM-as-a-Judge Evaluation. Accepted at ICML 2026. [arXiv](https://arxiv.org/abs/2601.05420) · [Poster](https://icml.cc/virtual/2026/poster/61131)."
+    - "Acero-Garcés, D., Guo, M., Lopez, D., Moyano, M., et al. High-Throughput Profiling of Anti-Viral and Self-Antigen Antibodies to Identify Etiology in Encephalitis. Abstract accepted for the American Academy of Neurology Annual Meeting, 2026."
+
+- title: Projects
+  type: time_table
+  contents:
+    - title: THRIVE (Food Intervention Pilot RCT)
+      year: Jan 2026 - Mar 2026
+      description:
+        - Provided statistical consulting in collaboration with clinical researchers.
+    - title: debiasLLMReporting
+      year: Dec 2025 - Feb 2026
+      description:
+        - Compared Rogan–Gladen and PPI/PPI++ methods using over 1,000 Monte Carlo runs per setting, evaluating bias, coverage, and interval width.
+        - "[Project documentation](https://yiqunchen.github.io/debias-llm-as-a-judge/)"
+    - title: "PlanMCI: Budget-Constrained Study Design Tool"
+      year: Sep 2025 - Oct 2025
+      description:
+        - Developed an R package for ANCOVA-based power analysis and minimum detectable effect.
+        - Built an interactive Shiny application for clinical trial design under budget constraints.
+        - "[R package](https://github.com/Raymond2Moran/PlanMCI) · [Shiny application](https://5v6gp7-moran-guo.shinyapps.io/PlanMCI_Trail_Design/)"
+
+- title: Professional Memberships
+  type: list
+  contents:
+    - American Statistical Association (ASA)
+    - International Chinese Statistical Association (ICSA)
