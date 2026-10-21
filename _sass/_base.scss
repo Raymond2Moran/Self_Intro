@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Signika+Negative:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400&family=Signika+Negative:wght@400;600;700&display=swap");
 
 /*******************************************************************************
  * Styles for the base elements of the theme.
@@ -8,7 +8,9 @@
 /* 1) Base tokens */
 :root {
   --global-text-color: #111827;
-  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-body:
+    "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
 }
 
 .title-en {
@@ -26,7 +28,7 @@
 }
 
 .title-zh {
-  font-family: "Liu Jian Mao Cao", "KaiTi", "STKaiti", "Songti SC", cursive;
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
   font-weight: 400;
 }
 
@@ -1498,5 +1500,21 @@ figure.cover {
   /* mouse over link */
   a.cover-link:hover {
     color: #23212d !important;
+  }
+}
+
+// Keep externally generated GitHub charts within narrow screens.
+.github-activity-chart {
+  margin: 1rem 0;
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 495px;
+    height: auto;
+  }
+
+  figcaption {
+    margin-top: 0.5rem;
   }
 }
