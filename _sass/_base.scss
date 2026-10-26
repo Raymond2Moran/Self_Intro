@@ -1516,3 +1516,97 @@ figure.cover {
     margin-top: 0.5rem;
   }
 }
+
+/* Career portfolio: concise introduction, readable project summaries, clear actions. */
+.career-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 270px;
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 2rem;
+
+  .career-summary {
+    min-width: 0;
+  }
+
+  .profile {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.career-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1rem 0;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0.55rem 0.85rem;
+    border: 1px solid var(--global-text-color);
+    border-radius: 0.35rem;
+    color: var(--global-text-color);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .career-action-primary {
+    background: var(--global-text-color);
+    color: var(--global-bg-color);
+  }
+}
+
+.career-summary a[href^="mailto:"] {
+  overflow-wrap: anywhere;
+}
+
+.career-section {
+  margin: 2rem 0;
+}
+
+.career-project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.career-project {
+  min-width: 0;
+  padding: 1.2rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.5rem;
+  background: var(--global-card-bg-color);
+
+  h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+
+  .project-focus {
+    font-weight: 600;
+  }
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .career-intro,
+  .career-project-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .career-intro .profile {
+    max-width: 220px;
+  }
+}

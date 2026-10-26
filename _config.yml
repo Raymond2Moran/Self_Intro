@@ -7,13 +7,12 @@ first_name: Moran
 middle_name:
 last_name: Guo
 contact_note: >
-  Phone: (585)-360-8472 Email: mguo31@jh.edu
+  <a href="mailto:guomoran203@gmail.com">guomoran203@gmail.com</a>
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Biostatistics, Computational Biology, AI, Rock Climbing
+  Moran Guo is a biostatistician specializing in clinical trial programming, reproducible statistical analysis, and computational biology.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🦁 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
