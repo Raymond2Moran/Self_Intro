@@ -23,11 +23,7 @@ interests: Outside of work, I enjoy rock climbing, fitness, Japanese pop culture
 
 I turn clinical and biomedical data into reproducible analyses and clear results. At Quantive Intelligence (formerly LLX Solutions), I support statistical analysis, SAS programming, and quality control for clinical studies.
 
-<div class="career-actions" aria-label="Professional links">
-  <a class="career-action-primary" href="{{ '/assets/pdf/Moran_Guo_CV.pdf' | relative_url }}">Download CV (PDF)</a>
-  <a href="mailto:{{ site.data.socials.email }}">Email me</a>
-  <a href="https://github.com/{{ site.data.socials.github_username }}">GitHub</a>
-</div>
+{% include career_actions.liquid %}
 
 **Core skills:** SAS (Base Certified), R, Python, SQL · CDISC SDTM/ADaM · Tables, listings, and figures · Simulation and power analysis
 
