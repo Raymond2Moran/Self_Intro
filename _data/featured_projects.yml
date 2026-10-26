@@ -1,0 +1,36 @@
+- title: pppower
+  focus: Power and sample size planning
+  summary: R tools for planning studies that use prediction-powered inference.
+  contribution: Co-developed the R package, with modular functions, CI testing, documentation, and simulation studies of statistical performance.
+  tools: R · Monte Carlo simulation · CI/testing
+  links:
+    - label: Code
+      url: https://github.com/yiqunchen/pppower
+    - label: Documentation
+      url: https://yiqunchen.github.io/pppower/
+    - label: Calculator
+      url: https://yiqunchen.github.io/pppower/articles/sample-size-calculator.html
+
+- title: PlanMCI
+  focus: Study design under budget constraints
+  summary: ANCOVA-based power and minimum detectable effect calculations for mild cognitive impairment trials.
+  contribution: Developed the R package and interactive Shiny app to explore feasible designs and power under study budget constraints.
+  tools: R · Shiny · ANCOVA
+  links:
+    - label: Code
+      url: https://github.com/Raymond2Moran/PlanMCI
+    - label: Live app
+      url: https://5v6gp7-moran-guo.shinyapps.io/PlanMCI_Trail_Design/
+
+- title: LLM evaluation
+  focus: Inference with noisy automated judgments
+  summary: Statistical debiasing methods for LLM-as-a-judge evaluation.
+  contribution: Conducted simulation studies comparing Rogan–Gladen and PPI/PPI++ estimators, assessing bias, interval coverage, and interval width.
+  tools: R · Monte Carlo simulation · Prediction-powered inference
+  links:
+    - label: Code
+      url: https://github.com/yiqunchen/debias-llm-as-a-judge
+    - label: Documentation
+      url: https://yiqunchen.github.io/debias-llm-as-a-judge/
+    - label: Paper
+      url: https://arxiv.org/abs/2601.05420

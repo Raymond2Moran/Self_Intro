@@ -56,6 +56,7 @@ let applyTheme = () => {
   }
 
   document.documentElement.setAttribute("data-theme", theme);
+  setGithubStatsTheme(theme);
 
   // Add class to tables.
   let tables = document.getElementsByTagName("table");
@@ -86,6 +87,14 @@ let applyTheme = () => {
       background: getComputedStyle(document.documentElement).getPropertyValue("--global-bg-color") + "ee", // + 'ee' for trasparency.
     });
   }
+};
+
+// Update hosted charts when the site theme changes; keep a light fallback without JS.
+let setGithubStatsTheme = (theme) => {
+  document.querySelectorAll("img[data-theme-light-src][data-theme-dark-src]").forEach((image) => {
+    const source = theme === "dark" ? image.dataset.themeDarkSrc : image.dataset.themeLightSrc;
+    if (image.getAttribute("src") !== source) image.setAttribute("src", source);
+  });
 };
 
 let setHighlight = (theme) => {
@@ -284,6 +293,7 @@ let initTheme = () => {
 
   // Add event listener to the theme toggle button.
   document.addEventListener("DOMContentLoaded", function () {
+    setGithubStatsTheme(determineComputedTheme());
     const mode_toggle = document.getElementById("light-toggle");
 
     mode_toggle.addEventListener("click", function () {
