@@ -7,6 +7,22 @@ nav: true
 nav_order: 2
 ---
 
+## [PharmaSUG 27](https://pharmasug.org/conferences/pharmasug-2027-us/)
+
+Projects in development for PharmaSUG 2027, focusing on SAS programming, analysis datasets, and statistical inference.
+
+### SAS ADaM Core Dataset Skills
+
+Agent skills for developing and checking ADaM datasets in SAS using approved study specifications. The ADSL-first workflow covers ADSL, ADLB, ADVS, ADAE, and ADCM, with derivation traceability, independent QC expectations, and a worked synthetic study example.
+
+[View the SAS ADaM Core Dataset Skills repository](https://github.com/Raymond2Moran/pharmasug_27_pharmaskills)
+
+### Robust Covariate Adjustment under CAR in SAS
+
+A SAS Viya research implementation of continuous-outcome augmented inverse probability weighting (AIPW), joint calibration, CAR variance estimation, and treatment contrasts. The repository includes analysis workflows, documentation, and comparisons against RobinCar 1.2.0.
+
+[View the Robust Covariate Adjustment repository](https://github.com/brendazhang51/pharmasug_27)
+
 ## Featured projects
 
 Statistical tools and research software I have developed or contributed to, spanning clinical study design and reproducible inference.
