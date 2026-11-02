@@ -1501,9 +1501,24 @@ figure.cover {
   }
 }
 
-// Keep externally generated GitHub charts within narrow screens.
-.github-activity-chart {
+// Stack charts on narrow screens and place them side by side on desktop.
+.github-activity-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  gap: 1.5rem;
   margin: 1rem 0;
+}
+
+@media (min-width: 992px) {
+  .github-activity-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.github-activity-chart {
+  min-width: 0;
+  margin: 0;
 
   img {
     display: block;

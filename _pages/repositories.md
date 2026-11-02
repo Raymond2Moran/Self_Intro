@@ -42,6 +42,7 @@ Explore my public repositories, code, and contributions on GitHub.
 My public GitHub statistics and contribution activity, provided by [GHStats](https://ghstats.dev/).
 
 {% for user in site.data.repositories.github_users %}
+<div class="github-activity-grid">
 <figure class="github-activity-chart">
   <a href="https://github.com/{{ user }}">
     <img
@@ -73,6 +74,7 @@ My public GitHub statistics and contribution activity, provided by [GHStats](htt
   </a>
   <figcaption>Contribution activity over the past 30 days.</figcaption>
 </figure>
+</div>
 
 [View {{ user }}'s activity directly on GitHub](https://github.com/{{ user }}?tab=overview).
 {% endfor %}
