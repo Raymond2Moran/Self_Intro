@@ -22,6 +22,10 @@ try {
       content: "*, *::before, *::after { transition: none !important; animation: none !important; }"
     });
     assert.ok(!(await page.title()).includes("<span"), "Page title must be plain text: " + route);
+    const stylesheet = await page.locator('link[rel="stylesheet"][href*="/assets/css/main.css"]').getAttribute("href");
+    assert.ok(new URL(stylesheet, origin).search.length > 1 &&
+      !stylesheet.includes("d41d8cd98f00b204e9800998ecf8427e"),
+      "Main CSS must have a nonempty source fingerprint so browsers receive new styles");
     // Check rendered local links/assets, including a restored CV PDF if one is added.
     const urls = await page.locator("a[href], img[src]").evaluateAll((elements) =>
       elements.map((el) => el.href || el.src)
@@ -73,8 +77,31 @@ try {
     }
     await page.evaluate(() => setThemeSetting("light"));
     await page.locator("html:not(.transition)").waitFor({ state: "attached" });
-    for (const width of [320, 390, 600, 704, 1024]) {
+    for (const width of [320, 390, 600, 704, 768, 900, 1024, 1280, 1920]) {
       await page.setViewportSize({ width, height: 844 });
+      if (route === "/repositories/") {
+        const charts = await page.locator(".github-activity-grid > figure").evaluateAll((elements) =>
+          elements.map((element) => {
+            const rect = element.getBoundingClientRect();
+            return { left: rect.left, right: rect.right, top: rect.top, bottom: rect.bottom };
+          })
+        );
+        assert.equal(charts.length, 2, "Stats and sparkline must share the layout container");
+        if (width >= 768) {
+          assert.ok(Math.abs(charts[0].top - charts[1].top) <= 1 && charts[0].right <= charts[1].left,
+            "Stats and sparkline must appear left/right on one row at " + width + "px");
+          const imageGap = await page.locator(".github-activity-grid").evaluate((grid) => {
+            const images = [...grid.querySelectorAll("img")].map((image) => image.getBoundingClientRect());
+            return images[1].left - images[0].right;
+          });
+          assert.ok(imageGap >= 0 && imageGap <= 16,
+            "Charts must sit close together without excessive whitespace at " + width + "px; gap=" + imageGap);
+        } else {
+          assert.ok(charts[1].top >= charts[0].bottom - 1,
+            "Charts must stack without overlap on narrow screens at " + width + "px");
+        }
+        console.log("GHStats layout passed at " + width + "px: " + (width >= 768 ? "side by side" : "stacked"));
+      }
       if (route === "/" || route === "/repositories/") {
         const overflow = await page.evaluate(() =>
           document.documentElement.scrollWidth > document.documentElement.clientWidth + 1);
