@@ -18,6 +18,7 @@ on:
       - "**.yml"
       - "Gemfile"
       - "Gemfile.lock"
+      - "requirements.txt"
       - "!.github/workflows/axe.yml"
       - "!.github/workflows/broken-links.yml"
       - "!.github/workflows/deploy-docker-tag.yml"
@@ -57,6 +58,7 @@ on:
       - "**.yml"
       - "Gemfile"
       - "Gemfile.lock"
+      - "requirements.txt"
       - "!.github/workflows/axe.yml"
       - "!.github/workflows/broken-links.yml"
       - "!.github/workflows/deploy-docker-tag.yml"
@@ -71,6 +73,11 @@ on:
       - "!INSTALL.md"
       - "!README.md"
   workflow_dispatch:
+
+# Replace superseded PR checks; let an in-progress production deployment finish.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 permissions:
   contents: write
@@ -92,7 +99,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.13"
-          cache: "pip" # caching pip dependencies
+          cache: "pip"
+          cache-dependency-path: requirements.txt
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:
@@ -100,12 +108,22 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
-      - name: Install and Build 🔧
+      - name: Install image dependencies
         run: |
-          sudo apt-get update && sudo apt-get install -y imagemagick
-          pip3 install --upgrade nbconvert
-          export JEKYLL_ENV=production
-          bundle exec jekyll build
+          if ! command -v convert >/dev/null 2>&1 || ! command -v identify >/dev/null 2>&1; then
+            sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 update
+            sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 install -y --no-install-recommends imagemagick
+          fi
+          convert -version
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Build production site
+        run: JEKYLL_ENV=production bundle exec jekyll build
+      - name: Verify generated responsive images
+        run: |
+          identify _site/assets/img/Self_photo_business_casual-480.webp
+          identify _site/assets/img/publication_preview/preview_paper-480.webp
+          identify _site/assets/img/publication_preview/preview_pppower-480.webp
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
