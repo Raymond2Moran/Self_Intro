@@ -92,7 +92,7 @@
 - title: Publications
   type: list
   contents:
-    - "Chen, Y. T., Guo, M., Li, S. Power Analysis for Prediction-Powered Inference. Manuscript under review. [arXiv](https://arxiv.org/abs/2603.16041)."
+    - "Chen, Y. T., Guo, M., Li, S. Power Analysis for Prediction-Powered Inference. Under review at Statistics in Medicine. [arXiv](https://arxiv.org/abs/2603.16041)."
     - "Chen, Y. T., Lu, S., Li, S. J., Guo, M., Li, S. Y. Efficient Inference for Noisy LLM-as-a-Judge Evaluation. Accepted at ICML 2026. [arXiv](https://arxiv.org/abs/2601.05420) · [Poster](https://icml.cc/virtual/2026/poster/61131)."
     - "Acero-Garcés, D., Guo, M., Lopez, D., Moyano, M., et al. High-Throughput Profiling of Anti-Viral and Self-Antigen Antibodies to Identify Etiology in Encephalitis. Abstract accepted for the American Academy of Neurology Annual Meeting, 2026."
 
